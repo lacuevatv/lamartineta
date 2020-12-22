@@ -1,0 +1,24 @@
+/*FUENTES*/
+$fuente-principal: 'Intel Clear', sans-serif;
+$fuente-secundaria: 'Intel Clear Pro', $fuente-principal;//se usa regular
+
+
+/*COLORES*/
+$color-blanco: #fff;
+$color-negro: #333;
+
+/*TIEMPO*/
+$transitionSpeed: 500ms;
+
+/*GRID OPTIONS*/
+$xs: 576px; //<576px
+$sm: 768px; //<768px
+$md: 992px;
+$lg: 1200px; //<1200px
+$xlg: 1500px;
+
+$paddingSize: 35px;
+$paddingSizeSM: 43px;
+$paddingSizeMD: 60px;
+$paddingSizeLG: 60px;
+$paddingSizeXLG: 60px;

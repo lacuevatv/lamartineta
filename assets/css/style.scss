@@ -1,0 +1,33 @@
+/*
+html, body {
+    margin:0;
+    padding: 0;
+}
+*/
+
+@import 'sass/fonts';
+@import 'sass/variables';
+
+.site-wrapper {
+    @import 'sass/reset';
+}
+
+.site-wrapper {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-family: $fuente-principal;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color: $color-blanco;
+    color: $color-negro;
+    overflow-x: hidden;
+}//.main-wrapper
+
+
+.site-wrapper {
+    @import 'sass/mixins';
+    @import 'sass/helpers';
+    @import 'sass/page-styles';
+}
