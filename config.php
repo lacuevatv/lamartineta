@@ -1,6 +1,6 @@
 <?php
-define("RECAPTCHA_V3_KEY", '6Lcq4A8aAAAAAGYSNyTCPBpc2auSZWmP0NwNFLrT');
-define("RECAPTCHA_V3_SECRET_KEY", '6Lcq4A8aAAAAAN4pYOVT1HQtGIWcfDG2ZZe4hoDm');
+define("RECAPTCHA_V3_KEY", '');
+define("RECAPTCHA_V3_SECRET_KEY", '');
 
 define("BASE_URL", "https://lamartinetaposada.com/");
 
