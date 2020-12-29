@@ -34,12 +34,6 @@ small {
     text-transform: lowercase!important;
 }
 
-.intel-clear-pro {
-    font-family: $fuente-secundaria;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 .padding-container {
     padding-left: $paddingSize;
     padding-right: $paddingSize;
@@ -82,4 +76,9 @@ small {
     &:hover {
         opacity: .7;
     }
+}
+
+.image-responsive-block {
+    display: block;
+    max-width: 100%;
 }

@@ -1,0 +1,102 @@
+.main-footer {
+    @extend .padding-container;
+    background-color: $color-verde;
+    position: relative;
+    z-index: 1;
+
+    .wa-btn {
+        @extend .link-btn-default;
+        @extend .opacity-hover;
+        position: absolute;
+        z-index: 11;
+        right: 0;
+        top: 0;
+        width: 106px;
+        height: 106px;
+        border-radius: 50%;
+        background-color: $color-blanco;
+        color: $color-gris1;
+        font-weight: 700;
+        text-align: center;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+    }
+
+    .inner-footer {
+        position: relative;
+        z-index: 1;
+        @include padding-top-bottom(111px, 400px);
+        @media (min-width: $xs) {
+            @include padding-top-bottom(67px, 46px);
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        @media (min-width: $md) {
+            @include padding-top-bottom(45px, 72px);
+        }
+
+        .image-footer {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            @media (min-width: $xs) {
+                position: relative;
+                left: 0;
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+                width: 50%;
+            }
+            @media (min-width: $md) {
+                width: 25%;
+            }
+        }//image-footer
+
+        .contacto {
+            @media (min-width: $xs) {
+                width: 50%;
+            }
+            @media (min-width: $md) {
+                width: 25%;
+            }
+        }//contacto
+        
+        .redes-sociales {
+            @media (min-width: $xs) {
+                width: 50%;
+            }
+            @media (min-width: $md) {
+                width: 25%;
+            }
+        }//redes-sociales
+
+    }//.inner-footer
+}//.main-footer

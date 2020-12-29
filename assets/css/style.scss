@@ -1,16 +1,8 @@
-/*
-html, body {
-    margin:0;
-    padding: 0;
-}
-*/
-
-@import 'sass/fonts';
+@charset "UTF-8";
+//@import 'sass/fonts';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import 'sass/reset';
 @import 'sass/variables';
-
-.site-wrapper {
-    @import 'sass/reset';
-}
 
 .site-wrapper {
     position: relative;
@@ -22,12 +14,20 @@ html, body {
     font-weight: 400;
     background-color: $color-blanco;
     color: $color-negro;
-    overflow-x: hidden;
+    overflow: hidden;
 }//.main-wrapper
 
+.inner-wrapper {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    display: block;
+}
 
-.site-wrapper {
+.inner-wrapperr {
     @import 'sass/mixins';
     @import 'sass/helpers';
-    @import 'sass/page-styles';
+    @import 'sass/header';
+    @import 'sass/footer';
+    @import 'sass/formulario';
 }

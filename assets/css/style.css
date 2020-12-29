@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  clear: both;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*para ocultar texto y que lo lean los lectores de no videntes*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*para eliminar los float*/
+header, section, footer, aside {
+  clear: both;
+}
+
+/*imagen al 100% de ancho responsive*/
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/*input al 100%*/
+input, select {
+  display: block;
+  width: 100%;
+}
+
+/*elimina el diseño por defecto en el iphone*/
+input[type=submit] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+/*FUENTES*/
+/*COLORES*/
+/*TIEMPO*/
+/*GRID OPTIONS*/
+.site-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.inner-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  display: block;
+}
+
+.inner-wrapperr .video-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 299.31px;
+  padding-bottom: calc(var(--aspect-ratio, .5625) * 100%);
+}
+.inner-wrapperr .video-wrapper iframe, .inner-wrapperr .video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.inner-wrapperr sup {
+  font-size: 70%;
+  position: relative;
+  top: -0.4rem;
+}
+.inner-wrapperr sub {
+  font-size: 30%;
+  position: relative;
+}
+.inner-wrapperr small {
+  font-size: 80%;
+}
+.inner-wrapperr .text-lowercase {
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase !important;
+}
+.inner-wrapperr .padding-container {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+@media (min-width: 768px) {
+  .inner-wrapperr .padding-container {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapperr .padding-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapperr .padding-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+.inner-wrapperr .transition-all, .inner-wrapperr .opacity-hover {
+  transition: all 500ms;
+}
+.inner-wrapperr .link-btn-default {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.inner-wrapperr .link-btn-default:focus {
+  border: none;
+  outline: none;
+}
+.inner-wrapperr .link-btn-default:active {
+  border: none;
+  outline: none;
+}
+.inner-wrapperr .opacity-hover:hover  {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */

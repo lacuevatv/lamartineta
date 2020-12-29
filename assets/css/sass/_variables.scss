@@ -1,11 +1,13 @@
 /*FUENTES*/
-$fuente-principal: 'Intel Clear', sans-serif;
-$fuente-secundaria: 'Intel Clear Pro', $fuente-principal;//se usa regular
+$fuente-principal: 'Montserrat', sans-serif;
+//$fuente-secundaria: 'Intel Clear Pro', $fuente-principal;//se usa regular
 
 
 /*COLORES*/
 $color-blanco: #fff;
 $color-negro: #333;
+$color-verde: #5B7952;
+$color-gris1: #828385;
 
 /*TIEMPO*/
 $transitionSpeed: 500ms;
@@ -17,8 +19,8 @@ $md: 992px;
 $lg: 1200px; //<1200px
 $xlg: 1500px;
 
-$paddingSize: 35px;
-$paddingSizeSM: 43px;
-$paddingSizeMD: 60px;
-$paddingSizeLG: 60px;
-$paddingSizeXLG: 60px;
+$paddingSize: 32px;
+$paddingSizeSM: 80px;
+$paddingSizeMD: 80px;
+$paddingSizeLG: 109px;
+$paddingSizeXLG: 109px;

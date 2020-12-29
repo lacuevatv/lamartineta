@@ -39,13 +39,24 @@ if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrRe
     $email = isset( $_POST['email'] ) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
     $name = isset( $_POST['name'] ) ? filter_var($_POST['name'], FILTER_SANITIZE_STRING) : '';
     $tel = isset( $_POST['tel'] ) ? filter_var($_POST['tel'], FILTER_SANITIZE_STRING) : '';
+    $paisSelected = isset( $_POST['pais'] ) ? $_POST['pais'] : '';
     $datein = isset( $_POST['datein'] ) ? filter_var($_POST['datein'], FILTER_SANITIZE_STRING) : '';
     $dateout = isset( $_POST['dateout'] ) ? filter_var($_POST['dateout'], FILTER_SANITIZE_STRING) : '';
     $pasajeros = isset( $_POST['pasajeros'] ) ? filter_var($_POST['pasajeros'], FILTER_SANITIZE_NUMBER_INT) : '';
     $msj = isset( $_POST['msj'] ) ? filter_var($_POST['msj'], FILTER_SANITIZE_STRING) : '';
-    
+    $paisPasajero = '';
+
+    $paices = json_decode(file_get_contents('../paises.json'));
+
+    foreach ($paices->countries as $pais ) {
+        if ($pais->id === $paisSelected) {
+            $paisPasajero = $pais->name;
+        }
+    }
+
     $mensaje = '<div>';
     $mensaje .= '<p>Nombre: '.$name.'</p>';
+    $mensaje .= '<p>Pais: '.$paisPasajero.'</p>';
     $mensaje .= '<p>Email: '.$email.'</p>';
     $mensaje .= '<p>Tel: '.$tel.'</p>';
     $mensaje .= '<p>Fecha de entrada: '.$datein.'</p>';
