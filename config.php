@@ -24,14 +24,3 @@ define("INSTAGRAM_POSADA", "#");
 
 //Textos
 define("TITLE_PAGE", "La Martineta Posada de Campo");
-
-$paices = array(
-    array(
-        'value' => 'argentina',
-        'nombre' => 'Argentina'
-    ),
-    array(
-        'value' => 'brasil',
-        'nombre' => 'Brasil'
-    ),
-);

@@ -47,9 +47,9 @@ if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrRe
     $paisPasajero = '';
 
     $paices = json_decode(file_get_contents('../paises.json'));
-
+    
     foreach ($paices->countries as $pais ) {
-        if ($pais->id === $paisSelected) {
+        if ($pais->id == $paisSelected) {
             $paisPasajero = $pais->name;
         }
     }

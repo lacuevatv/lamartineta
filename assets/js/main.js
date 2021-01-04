@@ -174,11 +174,12 @@ function formulario(idform) {
                 }).then(function(respuesta){
                     //respuesta formulario
                     console.log(respuesta);
-                    var respuesta = document.querySelector('.respuesta')
-                    respuesta.innerText = respuesta.mensaje;
-                    respuesta.classList.add('on');
+                    var respuestaContenedor = document.querySelector('.respuesta')
+                    respuestaContenedor.innerText = respuesta.mensaje;
+                    respuestaContenedor.classList.add('on');
 
-                    document.querySelector(idform).reset().classList.add('off');
+                    document.querySelector(idform).reset()
+                    document.querySelector(idform).querySelector('.wrapper-formulario').classList.add('off');
                 })
                 .catch(function(error) {
                     console.log('Hubo un problema con la petición Fetch:' + error.message);
