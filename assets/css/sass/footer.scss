@@ -6,17 +6,22 @@
 
     .wa-btn {
         @extend .link-btn-default;
-        @extend .opacity-hover;
         position: absolute;
+        @extend .transition-all;
         z-index: 11;
-        right: 0;
-        top: 0;
+        right: 30px;
+        top: -53px;
         width: 106px;
         height: 106px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
         border-radius: 50%;
         background-color: $color-blanco;
         color: $color-gris1;
         font-weight: 700;
+        font-size: 13px;
         text-align: center;
         display: flex;
         display: -o-flex;
@@ -33,12 +38,35 @@
         -ms-justify-content: center;
         -o-justify-content: center;
         justify-content: center;
+        @media (min-width: $sm) {
+            right: 40px;
+        }
+        @media (min-width: $md) {
+            right: 60px;
+        }
+        @media (min-width: $lg) {
+            right: 56px;
+            width: 138px;
+            height: 138px;
+            top: -69px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &:hover {
+            @extend .transition-all;
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transform: scale(0.9);
+        }
     }
 
     .inner-footer {
         position: relative;
         z-index: 1;
-        @include padding-top-bottom(111px, 400px);
+        @include padding-top-bottom(111px, 350px);
         @media (min-width: $xs) {
             @include padding-top-bottom(67px, 46px);
             display: flex;
@@ -51,6 +79,11 @@
             -ms-flex-wrap: wrap;
             -o-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
         }
         @media (min-width: $md) {
             @include padding-top-bottom(45px, 72px);
@@ -58,8 +91,9 @@
 
         .image-footer {
             position: absolute;
-            bottom: 0;
+            bottom: 100px;
             left: 50%;
+            width: 100%;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
@@ -68,6 +102,7 @@
             @media (min-width: $xs) {
                 position: relative;
                 left: 0;
+                bottom: 0;
                 -webkit-transform: translateX(0);
                 -moz-transform: translateX(0);
                 -ms-transform: translateX(0);
@@ -76,26 +111,146 @@
                 width: 50%;
             }
             @media (min-width: $md) {
-                width: 25%;
+                width: 30%;
+                max-width: 275px;
+            }
+
+            img {
+                margin: 0 auto;
+                @media (min-width: $md) {
+                    margin: 0;
+                }
             }
         }//image-footer
 
         .contacto {
+            color: $color-blanco;
             @media (min-width: $xs) {
                 width: 50%;
+                padding-left: 10%;
             }
             @media (min-width: $md) {
-                width: 25%;
+                width: 30%;
+                padding-left: 7%;
+            }
+            @media (min-width: $lg) {
+                width: 33%;
+                padding-left: 10%;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 24px;
+                line-height: 29px;
+                margin-bottom: 17px;
+                @media (min-width: $lg) {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+            }
+
+            a {
+                @extend .link-btn-default;
+                @extend  .opacity-hover;
+                line-height: 19px;
+                display: block;
+                position: relative;
+                margin-bottom: 15px;
+                padding-left: 35px;
+                @media (min-width: $lg) {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    width: 24px;
+                    height: 24px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                &.telicon::before {
+                    background-image: url('../images/tel-footer.png');
+                    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                        background-image: url('../images/tel-footer@2x.png');
+                        background-size: cover;
+                    }
+                }
+                &.waicon::before {
+                    background-image: url('../images/whatsapp.png');
+                    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                        background-image: url('../images/whatsapp@2x.png');
+                        background-size: cover;
+                    }
+                }
             }
         }//contacto
         
         .redes-sociales {
+            margin-top: 50px;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            -o-justify-content: center;
+            justify-content: center;
             @media (min-width: $xs) {
                 width: 50%;
+                flex-grow: 1;
             }
             @media (min-width: $md) {
-                width: 25%;
+                width: 30%;
+                flex-grow: 0;
+                margin-top: 0;
             }
+
+
+            .red {
+                @extend .link-btn-default;
+                @extend .opacity-hover;
+                display: block;
+                width: 49px;
+                height: 49px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0 20px;
+
+                &.facebook {
+                    background-image: url('../images/facebook.png');
+                    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                        background-image: url('../images/facebook@2x.png');
+                        background-size: cover;
+                    }
+                }
+
+                &.instagram {
+                    background-image: url('../images/ig.png');
+                    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                        background-image: url('../images/ig@2x.png');
+                        background-size: cover;
+                    }
+                }
+            }
+
         }//redes-sociales
 
     }//.inner-footer

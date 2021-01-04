@@ -1,6 +1,9 @@
 <?php require_once('functions.php'); ?>
 <html lang="es">
 <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo TITLE_PAGE; ?></title>
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo BASE_URL; ?>apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo BASE_URL; ?>favicon-32x32.png">
@@ -23,7 +26,7 @@
 <div class="site-wrapper">
     <div class="inner-wrapper">
         <header class="main-header">
-            <?php include 'templates/nav.php'; ?>
+            <?php //include 'templates/nav.php'; ?>
         
             <div class="inner-header">
                 <div class="image-header">
@@ -64,10 +67,10 @@
                             ); ?>
                         </div>
                     </h1>
-                    <a href="tel:<?php echo TELEPHONE_NUMBER; ?>" target="_blank" title="Llamar">
+                    <a class="telefono" href="tel:<?php echo TELEPHONE_NUMBER; ?>" target="_blank" title="Llamar">
                         <?php echo TELEPHONE_NUMBER_SHOW; ?>
                     </a>
-                    <a href="#reservar" title="Reservar">
+                    <a class="btn-reservar" href="#reservar" title="Reservar">
                         Reservar
                     </a>
                 </div>
@@ -76,7 +79,7 @@
 
         <main role="main">
 
-            <section id="historia" class="historia-section">
+            <section id="historia" class="section historia-section">
                 <h2>
                     Historia
                 </h2>
@@ -97,7 +100,7 @@
                 
             </section>
             
-            <section id="habitacion" class="habitacion-section">
+            <section id="habitacion" class="section habitacion-section">
                 <h2>
                     Alojamiento - Habitaciones
                 </h2>
@@ -353,7 +356,7 @@
 
             </section>
 
-            <section id="servicios" class="servicios-section">
+            <section id="servicios" class="section servicios-section">
                 <h2>
                     Servicios
                 </h2>
@@ -526,7 +529,7 @@
                 </ul>
             </section>
 
-            <section id="eventos" class="eventos-section">
+            <section id="eventos" class="section eventos-section">
                 <h2>
                     Eventos especiales
                 </h2>
@@ -562,7 +565,7 @@
                 </ul>
             </section>
             
-            <section id="reservar" class="form-section">
+            <section id="reservar" class="section form-section">
                 <h2>
                     Reservas
                 </h2>
@@ -570,7 +573,7 @@
                 <?php include 'templates/formulario.php'; ?>
             </section>
 
-            <section id="map" class="mapa-section"></section>
+            <section id="map" class="full-section mapa-section"></section>
         </main>
 
         <?php include 'templates/footer.php'; ?>
