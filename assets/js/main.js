@@ -67,7 +67,7 @@ function loadLazyImages() {
             //elemento source tablet
 
             if ( iSrc768.trim() != '' ) {
-                var srcTabvar = iSrc768.trim().split(',' );
+                var srcTablet = iSrc768.trim().split(',' );
 
                 var dataSrcTabvar = '';
 
@@ -79,7 +79,7 @@ function loadLazyImages() {
                 }
 
 
-                var sourceTabvar = document.createElement('source');
+                var sourceTablet = document.createElement('source');
                     sourceTablet.setAttribute('media', '(min-width: '+dimensiones.tablet+'px)' );
                     sourceTablet.setAttribute('srcset', dataSrcTabvar );
 
@@ -174,9 +174,11 @@ function formulario(idform) {
                 }).then(function(respuesta){
                     //respuesta formulario
                     console.log(respuesta);
-                    document.querySelector('.respuesta').innerText = respuesta.mensaje;
-                    
-                    document.querySelector(idform).reset();
+                    var respuesta = document.querySelector('.respuesta')
+                    respuesta.innerText = respuesta.mensaje;
+                    respuesta.classList.add('on');
+
+                    document.querySelector(idform).reset().classList.add('off');
                 })
                 .catch(function(error) {
                     console.log('Hubo un problema con la petición Fetch:' + error.message);
@@ -314,7 +316,7 @@ function init() {
 
 
     //lazyload images
-    //loadLazyImages();
+    loadLazyImages();
 
     //animaciones
 

@@ -1,22 +1,175 @@
+.form-section {
+    @include padding-top-bottom(50px, 73px);
+    @media (min-width: $sm) {
+        @include padding-top-bottom(50px, 100px);
+    }
+    @media (min-width: $md) {
+        @include padding-top-bottom(50px, 83px);
+    }
+}
+
 .formulario-reservas {
 
-    .legend {
+    .wrapper-formulario {
+        position: relative;
+        z-index: 11;
+        @extend .transition-all;
+        @media (min-width: $md) {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-justify-content: space-between;
+            -o-justify-content: space-between;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
+        &.off {
+            @extend .transition-all;
+            opacity: 0;
+            z-index: 11;
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+    .respuesta {
+        position: relative;
+        z-index: 0;
+        height: 0;
+        @extend .transition-all;
+        opacity: 0;
+
+        &.on {
+            @extend .transition-all;
+            opacity: 1;
+            z-index: 11;
+            height: 150px;
+            overflow: hidden;
+            padding: 30px 0;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #5B7952;
+            width: 100%;
+            max-width: 296px;
+            margin: 0;
+        }
+    }
+
+    legend {
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-gris1;
+        margin: 30px 0;
+        @media (min-width: $md) {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     .columna {
-
+        @media (min-width: $md) {
+            width: 47%;
+        }
     }//.columna
 
     .col-inputs {
+        @media (min-width: $sm) {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-justify-content: space-between;
+            -o-justify-content: space-between;
+            justify-content: space-between;
+        }
+
+        .input-wrapper {
+            @media (min-width: $sm) {
+                width: 47%;
+            }
+        }
+    }
+
+    .col-inputs-2 {
+        @media (min-width: $md) {
+            display: block;
+        }
+
+        .input-wrapper {
+            @media (min-width: $md) {
+                width: 100%;
+            }
+        }
+    }
+
+    .col-inputs-3 {
         
+        .input-wrapper {
+            @media (min-width: $md) {
+                margin-top: -6px;
+                margin-bottom: 0;
+            }
+        }
     }
 
     .input-wrapper {
+        border-bottom: 1px solid $color-gris1;
+        margin: 25px 0;
+        label {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            color: $color-gris1;
+        }
 
+        input, textarea, select {
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-family: $fuente-principal;
+            line-height: 24px;
+            padding: 5px;
+            display: block;
+            width: 100%;
+        }
+
+        textarea {
+            height: 148px;
+            @media (min-width: $md) {
+                height: 117px;;
+            }
+        }
     }//.input-wrapper
 
     .submit-wrapper {
+        @media (min-width: $md) {
+            width: 100%;
+        }
+        button {
+            @extend .link-btn-default;
+            @extend .opacity-hover;
+            background-color: $color-verde;
+            color: $color-blanco;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 10px;
+            display: block;
+            margin: 64px auto 15px;
+            padding: 16px 5px;
+            width: 141px;
+        }
 
     }//submit-wrapper
 

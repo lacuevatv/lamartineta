@@ -30,7 +30,7 @@
             <a class="telicon" href="tel:<?php echo TELEPHONE_NUMBER; ?>" target="_blank" title="Teléfono">
                 <?php echo TELEPHONE_NUMBER_SHOW; ?>
             </a>
-            <a class="telicon" href="whatsapp://send?text=¡Hola! Quisiera hacer una consulta.&phone=<?php echo WHATSAPP_NUMBER; ?>&abid=<?php echo WHATSAPP_NUMBER; ?>" target="_blank" title="Whatsapp">
+            <a class="waicon" href="whatsapp://send?text=¡Hola! Quisiera hacer una consulta.&phone=<?php echo WHATSAPP_NUMBER; ?>&abid=<?php echo WHATSAPP_NUMBER; ?>" target="_blank" title="Whatsapp">
                 <?php echo WHATSAPP_NUMBER_SHOW; ?>
             </a>
         </div>

@@ -125,7 +125,6 @@ button {
   margin: 0;
   display: block;
 }
-
 .inner-wrapper .video-wrapper {
   position: relative;
   height: 0;
@@ -155,51 +154,63 @@ button {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase !important;
 }
-.inner-wrapper .padding-container, .inner-wrapper .section, .inner-wrapper .main-footer {
+.inner-wrapper .padding-container, .inner-wrapper .main-footer, .inner-wrapper .section {
   padding-left: 32px;
   padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .inner-wrapper .padding-container, .inner-wrapper .section, .inner-wrapper .main-footer {
+  .inner-wrapper .padding-container, .inner-wrapper .main-footer, .inner-wrapper .section {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 @media (min-width: 992px) {
-  .inner-wrapper .padding-container, .inner-wrapper .section, .inner-wrapper .main-footer {
+  .inner-wrapper .padding-container, .inner-wrapper .main-footer, .inner-wrapper .section {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 @media (min-width: 1200px) {
-  .inner-wrapper .padding-container, .inner-wrapper .section, .inner-wrapper .main-footer {
+  .inner-wrapper .padding-container, .inner-wrapper .main-footer, .inner-wrapper .section {
     padding-left: 109px;
     padding-right: 109px;
   }
 }
-.inner-wrapper .transition-all, .inner-wrapper .main-footer .wa-btn:hover, .inner-wrapper .main-footer .wa-btn, .inner-wrapper .opacity-hover, .inner-wrapper .main-footer .inner-footer .redes-sociales .red, .inner-wrapper .main-footer .inner-footer .contacto a, .inner-wrapper .main-header .inner-header .text-header .btn-reservar {
+.inner-wrapper .transition-all, .inner-wrapper .formulario-reservas .respuesta.on, .inner-wrapper .formulario-reservas .respuesta, .inner-wrapper .formulario-reservas .wrapper-formulario.off, .inner-wrapper .formulario-reservas .wrapper-formulario, .inner-wrapper .main-footer .wa-btn:hover, .inner-wrapper .main-footer .wa-btn, .inner-wrapper .opacity-hover, .inner-wrapper .formulario-reservas .submit-wrapper button, .inner-wrapper .main-footer .inner-footer .redes-sociales .red, .inner-wrapper .main-footer .inner-footer .contacto a, .inner-wrapper .main-header .inner-header .text-header .btn-reservar {
   transition: all 500ms;
 }
-.inner-wrapper .link-btn-default, .inner-wrapper .main-footer .inner-footer .redes-sociales .red, .inner-wrapper .main-footer .inner-footer .contacto a, .inner-wrapper .main-footer .wa-btn, .inner-wrapper .main-header .inner-header .text-header .btn-reservar {
+.inner-wrapper .link-btn-default, .inner-wrapper .formulario-reservas .submit-wrapper button, .inner-wrapper .main-footer .inner-footer .redes-sociales .red, .inner-wrapper .main-footer .inner-footer .contacto a, .inner-wrapper .main-footer .wa-btn, .inner-wrapper .main-header .inner-header .text-header .btn-reservar {
   position: relative;
   cursor: pointer;
   outline: none;
   border: none;
 }
-.inner-wrapper .link-btn-default:focus, .inner-wrapper .main-footer .inner-footer .redes-sociales .red:focus, .inner-wrapper .main-footer .inner-footer .contacto a:focus, .inner-wrapper .main-footer .wa-btn:focus, .inner-wrapper .main-header .inner-header .text-header .btn-reservar:focus {
+.inner-wrapper .link-btn-default:focus, .inner-wrapper .formulario-reservas .submit-wrapper button:focus, .inner-wrapper .main-footer .inner-footer .redes-sociales .red:focus, .inner-wrapper .main-footer .inner-footer .contacto a:focus, .inner-wrapper .main-footer .wa-btn:focus, .inner-wrapper .main-header .inner-header .text-header .btn-reservar:focus {
   border: none;
   outline: none;
 }
-.inner-wrapper .link-btn-default:active, .inner-wrapper .main-footer .inner-footer .redes-sociales .red:active, .inner-wrapper .main-footer .inner-footer .contacto a:active, .inner-wrapper .main-footer .wa-btn:active, .inner-wrapper .main-header .inner-header .text-header .btn-reservar:active {
+.inner-wrapper .link-btn-default:active, .inner-wrapper .formulario-reservas .submit-wrapper button:active, .inner-wrapper .main-footer .inner-footer .redes-sociales .red:active, .inner-wrapper .main-footer .inner-footer .contacto a:active, .inner-wrapper .main-footer .wa-btn:active, .inner-wrapper .main-header .inner-header .text-header .btn-reservar:active {
   border: none;
   outline: none;
 }
-.inner-wrapper .opacity-hover:hover , .inner-wrapper .main-footer .inner-footer .redes-sociales .red:hover , .inner-wrapper .main-footer .inner-footer .contacto a:hover , .inner-wrapper .main-header .inner-header .text-header .btn-reservar:hover  {
+.inner-wrapper .opacity-hover:hover , .inner-wrapper .formulario-reservas .submit-wrapper button:hover , .inner-wrapper .main-footer .inner-footer .redes-sociales .red:hover , .inner-wrapper .main-footer .inner-footer .contacto a:hover , .inner-wrapper .main-header .inner-header .text-header .btn-reservar:hover  {
   opacity: 0.7;
 }
 .inner-wrapper .image-responsive-block {
   display: block;
   max-width: 100%;
+}
+.inner-wrapper .title-section {
+  color: #5B7952;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .title-section {
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 .inner-wrapper .main-header {
   position: relative;
@@ -214,9 +225,9 @@ button {
 .inner-wrapper .main-header .inner-header {
   position: relative;
   z-index: 1;
-  height: 723px;
+  height: 683px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .inner-wrapper .main-header .inner-header {
     height: auto;
   }
@@ -228,37 +239,56 @@ button {
   height: 500px;
   background-color: #5B7952;
 }
+@media (min-width: 576px) {
+  .inner-wrapper .main-header .inner-header .image-header {
+    overflow: hidden;
+  }
+}
 @media (min-width: 768px) {
   .inner-wrapper .main-header .inner-header .image-header {
+    z-index: 11;
     background-color: transparent;
     height: 283px;
   }
 }
 @media (min-width: 992px) {
   .inner-wrapper .main-header .inner-header .image-header {
+    z-index: 1;
     width: 50%;
     right: 0;
+    height: 100%;
   }
+}
+.inner-wrapper .main-header .inner-header .image-header .banner-header {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .inner-wrapper .main-header .inner-header .text-header {
   position: relative;
   z-index: 11;
-  padding: 283px 80px 20px;
+  padding: 26px 32px 20px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .main-header .inner-header .text-header {
+    padding: 263px 80px 30px;
+    z-index: 1;
+  }
 }
 @media (min-width: 992px) {
   .inner-wrapper .main-header .inner-header .text-header {
     width: 50%;
-    padding: 0 80px 30px;
+    padding: 0 0 80px 80px;
   }
 }
 @media (min-width: 1200px) {
   .inner-wrapper .main-header .inner-header .text-header {
-    padding: 0 109px 30px;
+    padding: 0 10px 80px 109px;
   }
 }
 @media (min-width: 1500px) {
   .inner-wrapper .main-header .inner-header .text-header {
-    padding: 0 109px 30px;
+    padding: 0 10px 80px 109px;
   }
 }
 .inner-wrapper .main-header .inner-header .text-header .brandname {
@@ -590,8 +620,165 @@ button {
     background-size: cover;
   }
 }
-.inner-wrapper .section {
-  display: none;
+.inner-wrapper .form-section {
+  padding-top: 50px;
+  padding-bottom: 73px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .form-section {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .form-section {
+    padding-top: 50px;
+    padding-bottom: 83px;
+  }
+}
+.inner-wrapper .formulario-reservas .wrapper-formulario {
+  position: relative;
+  z-index: 11;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas .wrapper-formulario {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.inner-wrapper .formulario-reservas .wrapper-formulario.off {
+  opacity: 0;
+  z-index: 11;
+  height: 0;
+  overflow: hidden;
+}
+.inner-wrapper .formulario-reservas .respuesta {
+  position: relative;
+  z-index: 0;
+  height: 0;
+  opacity: 0;
+}
+.inner-wrapper .formulario-reservas .respuesta.on {
+  opacity: 1;
+  z-index: 11;
+  height: 150px;
+  overflow: hidden;
+  padding: 30px 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #5B7952;
+  width: 100%;
+  max-width: 296px;
+  margin: 0;
+}
+.inner-wrapper .formulario-reservas legend {
+  font-size: 18px;
+  line-height: 22px;
+  color: #828385;
+  margin: 30px 0;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas legend {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas .columna {
+    width: 47%;
+  }
+}
+@media (min-width: 768px) {
+  .inner-wrapper .formulario-reservas .col-inputs {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .inner-wrapper .formulario-reservas .col-inputs .input-wrapper {
+    width: 47%;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas .col-inputs-2 {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas .col-inputs-2 .input-wrapper {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas .col-inputs-3 .input-wrapper {
+    margin-top: -6px;
+    margin-bottom: 0;
+  }
+}
+.inner-wrapper .formulario-reservas .input-wrapper {
+  border-bottom: 1px solid #828385;
+  margin: 25px 0;
+}
+.inner-wrapper .formulario-reservas .input-wrapper label {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #828385;
+}
+.inner-wrapper .formulario-reservas .input-wrapper input, .inner-wrapper .formulario-reservas .input-wrapper textarea, .inner-wrapper .formulario-reservas .input-wrapper select {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  padding: 5px;
+  display: block;
+  width: 100%;
+}
+.inner-wrapper .formulario-reservas .input-wrapper textarea {
+  height: 148px;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas .input-wrapper textarea {
+    height: 117px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .formulario-reservas .submit-wrapper {
+    width: 100%;
+  }
+}
+.inner-wrapper .formulario-reservas .submit-wrapper button {
+  background-color: #5B7952;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  margin: 64px auto 15px;
+  padding: 16px 5px;
+  width: 141px;
 }
 
 /*# sourceMappingURL=style.css.map */

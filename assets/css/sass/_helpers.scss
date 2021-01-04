@@ -82,3 +82,14 @@ small {
     display: block;
     max-width: 100%;
 }
+
+.title-section {
+    color: $color-verde;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    @media (min-width: $md) {
+        font-size: 32px;
+        line-height: 39px;
+    }
+}

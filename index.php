@@ -29,12 +29,12 @@
             <?php //include 'templates/nav.php'; ?>
         
             <div class="inner-header">
-                <div class="image-header">
+                <div class="image-header lazy-load-image">
                     <?php
                     echo setHtmlImage(
                         array(
-                            'class' => '',
-                            'alt' => 'Logo La Martineta',
+                            'class' => 'banner-header',
+                            'alt' => 'La Martineta',
                             'src' => array(
                                 IMAGESURL . 'header-posada.png', IMAGESURL . 'header-posada@2x.png', 
                             ),
@@ -79,7 +79,7 @@
 
         <main role="main">
 
-            <section id="historia" class="section historia-section">
+            <section style="display:none" id="historia" class="section historia-section">
                 <h2>
                     Historia
                 </h2>
@@ -100,7 +100,7 @@
                 
             </section>
             
-            <section id="habitacion" class="section habitacion-section">
+            <section style="display:none" id="habitacion" class="section habitacion-section">
                 <h2>
                     Alojamiento - Habitaciones
                 </h2>
@@ -356,7 +356,7 @@
 
             </section>
 
-            <section id="servicios" class="section servicios-section">
+            <section style="display:none" id="servicios" class="section servicios-section">
                 <h2>
                     Servicios
                 </h2>
@@ -529,7 +529,7 @@
                 </ul>
             </section>
 
-            <section id="eventos" class="section eventos-section">
+            <section style="display:none" id="eventos" class="section eventos-section">
                 <h2>
                     Eventos especiales
                 </h2>
@@ -566,14 +566,14 @@
             </section>
             
             <section id="reservar" class="section form-section">
-                <h2>
+                <h2 class="title-section">
                     Reservas
                 </h2>
 
                 <?php include 'templates/formulario.php'; ?>
             </section>
 
-            <section id="map" class="full-section mapa-section"></section>
+            <section style="display:none" id="map" class="full-section mapa-section"></section>
         </main>
 
         <?php include 'templates/footer.php'; ?>
