@@ -79,21 +79,66 @@
 
         <main role="main">
 
-            <section style="display:none" id="historia" class="section historia-section">
-                <h2>
-                    Historia
-                </h2>
+            <section id="historia" class="historia-section">
                 <div class="historia-wrapper">
+                    <div class="image-historia">
+                        <div class="lazy-load-image">
+                            <?php echo setHtmlImage(
+                                array(
+                                    'class' => 'historica',
+                                    'alt' => 'Imagen historica',
+                                    'src' => array(
+                                        IMAGESURL . 'posada-historica.png', IMAGESURL . 'posada-historica@2x.png', 
+                                    ),
+                                    'svg' => '',
+                                    'srcTablet' => array(IMAGESURL . 'posada-historica-tablet.png', IMAGESURL . 'posada-historica-tablet@2x.png',),
+                                    'srcMobile' => array(IMAGESURL . 'posada-historica-mov.png', IMAGESURL . 'posada-historica-mov@2x.png',)
+                                ), true
+                            ); ?>
+                        </div>
+                        <div class="lazy-load-image">
+                            <?php echo setHtmlImage(
+                                array(
+                                    'class' => 'stone',
+                                    'alt' => 'Roca',
+                                    'src' => array(
+                                        IMAGESURL . 'stone.png', IMAGESURL . 'stone@2x.png', 
+                                    ),
+                                    'svg' => '',
+                                    'srcTablet' => '',
+                                    'srcMobile' => ''
+                                ), true
+                            ); ?>
+                        </div>
+                    </div>
+
                     <div class="historia">
+                        <h2 class="title-section">
+                            Historia
+                        </h2>
                         <p>
                             <strong>Capilla del Señor</strong>, hoy ciudad cabecera del partido de <strong>Exaltación de la Cruz</strong>, es uno de los más antiguos en tierras bonaerenses.<br>
                             <strong>285 años desde su fundación</strong> y basándonos en su actual fisionomía de pueblo donde conjuga la tranquilidad y el esparcimiento, <strong>es aquí donde decidimos instalar esta posada</strong>.<br>
                             Comenzamos recuperando la histórica casona del año 1860 cargada de historia y en donde funcionó una de las más antiguas casas de remate-feria del país <strong>“La Feria de Los hermanos Lanusse”</strong>.<br>
                             Es allí donde funciona la recepción, un gran living y un ambiente donde el huésped podrá disfrutar de un agradable desayuno campestre.
                         </p>
-                        <p>
+                        <p class="texto-firulete">
                             Paralelamente se construyeron 8 amplias habitaciones de 30 mts2 todas con vista al paisaje que ofrece el parque con añosa arboleda. El recorrido del mismo incluye un lago, un antiguo palomar, pileta de natación, huerta orgánica sembrada de tomillo, romero y albahaca que tiene su sitio privilegiado entre verduras y hortalizas, un área de cítricos pomelos, ciruelos, membrillos.<br>
                             <strong>Dos sensaciones invaden al visitante, hay mucho pasado allí y también mucho presente.</strong>
+                            <span class="lazy-load-image">
+                            <?php echo setHtmlImage(
+                                array(
+                                    'class' => 'firulete',
+                                    'alt' => 'Roca',
+                                    'src' => array(
+                                        IMAGESURL . 'firulete-texto-historia.png', IMAGESURL . 'firulete-texto-historia@2x.png', 
+                                    ),
+                                    'svg' => '',
+                                    'srcTablet' => '',
+                                    'srcMobile' => ''
+                                ), true
+                            ); ?>
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -101,7 +146,7 @@
             </section>
             
             <section style="display:none" id="habitacion" class="section habitacion-section">
-                <h2>
+                <h2 class="title-section">
                     Alojamiento - Habitaciones
                 </h2>
 
@@ -357,7 +402,7 @@
             </section>
 
             <section style="display:none" id="servicios" class="section servicios-section">
-                <h2>
+                <h2 class="title-section">
                     Servicios
                 </h2>
                 <p>
@@ -530,7 +575,7 @@
             </section>
 
             <section style="display:none" id="eventos" class="section eventos-section">
-                <h2>
+                <h2 class="title-section">
                     Eventos especiales
                 </h2>
 

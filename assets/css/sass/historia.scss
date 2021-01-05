@@ -1,0 +1,128 @@
+.historia-section {
+    position: relative;
+    z-index: 1;
+
+    .historia-wrapper {
+        padding: 80px $paddingSize 20px;
+        @media (min-width: $sm) {
+            padding: 100px $paddingSizeSM 20px 0;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-justify-content: space-between;
+            -o-justify-content: space-between;
+            justify-content: space-between;
+        }
+        @media (min-width: $md) {
+            padding: 105px $paddingSizeMD 20px 0;
+        }
+        @media (min-width: $lg) {
+            padding: 155px $paddingSizeLG 20px 0;
+        }
+        @media (min-width: $xlg) {
+            padding: 155px $paddingSizeXLG 20px 0;
+        }
+
+        .image-historia {
+            position: relative;
+            @media (min-width: $sm) {
+                width: 40%;
+                max-width: 480px;
+            }
+
+            .historica {
+                position: relative;
+                z-index: 1;
+                display: block;
+                max-width: 100%;
+            }
+
+            .stone {
+                position: absolute;
+                z-index: 11;
+                bottom: 0;
+                right: -20px;
+                width: 124px;
+                @media (min-width: $sm) {
+                    right: -70px;
+                    width: 184px;
+                    bottom: 160px;
+                }
+                @media (min-width: $md) {
+                    right: -20px;
+                    width: 184px;
+                    bottom: 30px;
+                }
+                @media (min-width: $lg) {
+                    right: 45px;
+                    bottom: 40px;
+                }
+            }
+        }//image-historia
+
+        .historia {
+            color: $color-gris1;
+            margin-top: 40px;
+            @media (min-width: $sm) {
+                width: 60%;
+                margin: 0;
+            }
+            @media (min-width: $md) {            
+                display: flex;
+                display: -o-flex;
+                display: -ms-flex;
+                display: -moz-flex;
+                display: -webkit-flex;
+                -webkit-justify-content: space-between;
+                -moz-justify-content: space-between;
+                -ms-justify-content: space-between;
+                -o-justify-content: space-between;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            @media (min-width: $lg) {   
+                flex-grow: 1;
+            }
+            
+            .title-section {
+                margin: 20px 0;
+                @media (min-width: $md) {
+                    width: 100%;
+                }
+            }
+            
+            p {
+                position: relative;
+                @media (min-width: $md) {
+                    width: 47%;
+                }
+                @media (min-width: $lg) {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+
+            .texto-firulete {
+                .firulete {
+                    display: none;
+                    @media (min-width: $md) {
+                        display: block;
+                        width: 230px;
+                        margin: 20px 0 0 10px;
+                    }
+                }
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }//historia
+
+    }//.historia-wrapper
+
+
+}//historia-section

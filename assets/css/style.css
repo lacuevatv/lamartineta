@@ -129,6 +129,10 @@ button {
   position: relative;
   z-index: 1;
 }
+.inner-wrapper .full-section {
+  position: relative;
+  z-index: 1;
+}
 
 .inner-wrapper .video-wrapper {
   position: relative;
@@ -966,6 +970,150 @@ button {
   margin: 64px auto 15px;
   padding: 16px 5px;
   width: 141px;
+}
+.inner-wrapper .historia-section {
+  position: relative;
+  z-index: 1;
+}
+.inner-wrapper .historia-section .historia-wrapper {
+  padding: 80px 32px 20px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .historia-section .historia-wrapper {
+    padding: 100px 80px 20px 0;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .historia-section .historia-wrapper {
+    padding: 105px 80px 20px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .historia-section .historia-wrapper {
+    padding: 155px 109px 20px 0;
+  }
+}
+@media (min-width: 1500px) {
+  .inner-wrapper .historia-section .historia-wrapper {
+    padding: 155px 109px 20px 0;
+  }
+}
+.inner-wrapper .historia-section .historia-wrapper .image-historia {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .historia-section .historia-wrapper .image-historia {
+    width: 40%;
+    max-width: 480px;
+  }
+}
+.inner-wrapper .historia-section .historia-wrapper .image-historia .historica {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 100%;
+}
+.inner-wrapper .historia-section .historia-wrapper .image-historia .stone {
+  position: absolute;
+  z-index: 11;
+  bottom: 0;
+  right: -20px;
+  width: 124px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .historia-section .historia-wrapper .image-historia .stone {
+    right: -70px;
+    width: 184px;
+    bottom: 160px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .historia-section .historia-wrapper .image-historia .stone {
+    right: -20px;
+    width: 184px;
+    bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .historia-section .historia-wrapper .image-historia .stone {
+    right: 45px;
+    bottom: 40px;
+  }
+}
+.inner-wrapper .historia-section .historia-wrapper .historia {
+  color: #828385;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .historia-section .historia-wrapper .historia {
+    width: 60%;
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .historia-section .historia-wrapper .historia {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .historia-section .historia-wrapper .historia {
+    flex-grow: 1;
+  }
+}
+.inner-wrapper .historia-section .historia-wrapper .historia .title-section {
+  margin: 20px 0;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .historia-section .historia-wrapper .historia .title-section {
+    width: 100%;
+  }
+}
+.inner-wrapper .historia-section .historia-wrapper .historia p {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .historia-section .historia-wrapper .historia p {
+    width: 47%;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .historia-section .historia-wrapper .historia p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.inner-wrapper .historia-section .historia-wrapper .historia .texto-firulete .firulete {
+  display: none;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .historia-section .historia-wrapper .historia .texto-firulete .firulete {
+    display: block;
+    width: 230px;
+    margin: 20px 0 0 10px;
+  }
+}
+.inner-wrapper .historia-section .historia-wrapper .historia strong {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

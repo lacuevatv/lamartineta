@@ -29,7 +29,10 @@
         z-index: 1;
     }
 
-    // .full-section {}
+    .full-section {
+        position: relative;
+        z-index: 1;
+    }
 
 }
 
@@ -39,5 +42,6 @@
     @import 'sass/header';
     @import 'sass/footer';
     @import 'sass/formulario';
+    @import 'sass/historia';
 
 }
