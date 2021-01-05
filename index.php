@@ -19,14 +19,14 @@
     <script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_V3_KEY; ?>"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <link href="<?php echo BASE_URL; ?>assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>assets/css/style.css?ver=1.0" rel="stylesheet">
     
 </head>
 <body>
-<div class="site-wrapper">
+<div class="site-wrapper" id="toppage">
     <div class="inner-wrapper">
         <header class="main-header">
-            <?php //include 'templates/nav.php'; ?>
+            <?php include 'templates/nav.php'; ?>
         
             <div class="inner-header">
                 <div class="image-header lazy-load-image">
@@ -70,7 +70,7 @@
                     <a class="telefono" href="tel:<?php echo TELEPHONE_NUMBER; ?>" target="_blank" title="Llamar">
                         <?php echo TELEPHONE_NUMBER_SHOW; ?>
                     </a>
-                    <a class="btn-reservar" href="#reservar" title="Reservar">
+                    <a class="btn-reservar smoth-scroll" href="#reservar" title="Reservar">
                         Reservar
                     </a>
                 </div>
@@ -580,7 +580,7 @@
 
     </div>
 </div>
-<script src="<?php echo BASE_URL; ?>assets/js/main.js"></script>
+<script src="<?php echo BASE_URL; ?>assets/js/main.js?ver=1.0"></script>
     
 </body>
 </html>

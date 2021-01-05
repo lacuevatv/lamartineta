@@ -1,13 +1,9 @@
 .main-header {
     position: relative;
-    z-index: 1;
+    z-index: 11;
     padding-top: 80px;
 
-    .main-nav {
-        position: absolute;
-        z-index: 111;
-        height: 80px;
-    }
+    @import 'nav';
 
     .inner-header {
         position: relative;

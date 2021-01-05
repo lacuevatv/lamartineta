@@ -306,7 +306,27 @@ function getOffset( el ) {
     }
 }
 
+function togleMenu() {
+    var btn = document.querySelector('.togle');
+    var menu = document.querySelector('.main-menu');
+
+    if (menu.classList.contains('open')) {
+        //cierra menu
+        menu.classList.remove('open');
+        btn.classList.remove('open');
+    } else {
+        //abre menu
+        menu.classList.add('open');
+        btn.classList.add('open');
+    }
+}
+
 function init() {
+
+    //togle
+    var togle = document.querySelector('.togle');
+
+    togle.addEventListener('click', togleMenu);
 
     //formulario
     if (document.querySelector('#booking_form')) {
@@ -314,7 +334,23 @@ function init() {
     }
    
     //smothscroll menu
+    var smotsScrolls = document.querySelectorAll('.smoth-scroll');
+    if (smotsScrolls.length > 0) {
+        for (var index = 0; index < smotsScrolls.length; index++) {
+            var element = smotsScrolls[index];
 
+            element.addEventListener('click', function(event){
+                event.preventDefault();
+                smoothScroll(this.getAttribute('href'));
+                if (this.getAttribute('data-close')) {
+                    togleMenu();   
+                }
+            });
+            
+            
+        }
+    }
+    
 
     //lazyload images
     loadLazyImages();

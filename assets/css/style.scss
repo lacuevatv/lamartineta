@@ -25,6 +25,8 @@
 
     .section {
         @extend .padding-container;
+        position: relative;
+        z-index: 1;
     }
 
     // .full-section {}
