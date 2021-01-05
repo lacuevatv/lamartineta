@@ -36,10 +36,10 @@
         </div>
 
         <div class="redes-sociales">
-            <a class="red facebook" href="href:<?php echo FACEBOOK_POSADA; ?>" target="_blank" title="Facebook">
+            <a class="red facebook" href="<?php echo FACEBOOK_POSADA; ?>" target="_blank" title="Facebook">
                 <span class="sr-only">Facebook</span>   
             </a>
-            <a class="red instagram" href="href:<?php echo INSTAGRAM_POSADA; ?>" target="_blank" title="Instagram">
+            <a class="red instagram" href="<?php echo INSTAGRAM_POSADA; ?>" target="_blank" title="Instagram">
                 <span class="sr-only">Instagram</span>   
             </a>
         </div>
