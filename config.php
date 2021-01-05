@@ -19,8 +19,8 @@ define("WHATSAPP_NUMBER", "5491144006189");
 define("WHATSAPP_NUMBER_SHOW", "+54 9 11 4400 6189");
 define("TELEPHONE_NUMBER_SHOW", "+54 2323 492063");
 define("TELEPHONE_NUMBER", "+542323492063");
-define("FACEBOOK_POSADA", "#");
-define("INSTAGRAM_POSADA", "#");
+define("FACEBOOK_POSADA", "https://www.facebook.com/LaMartinetaPosada/");
+define("INSTAGRAM_POSADA", "https://www.instagram.com/lamartinetaposadadecampo/");
 
 //Textos
 define("TITLE_PAGE", "La Martineta Posada de Campo");
