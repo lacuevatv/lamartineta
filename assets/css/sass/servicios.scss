@@ -1,0 +1,102 @@
+.servicios-section {
+    @include padding-top-bottom(90px, 80px);
+
+    @media (min-width: $lg) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+    }
+
+    .header-servicios {
+        @media (min-width: $lg) {
+            width: 30%;
+            max-width: 312px;
+        }
+    }
+
+    .title-section {
+        margin: 20px 0;
+    }
+    p {
+        font-size: 18px;
+        line-height: 20px;
+        color: $color-gris1;
+        margin-bottom: 40px;
+    }
+
+    .servicios {
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-gris1;
+        @media (min-width: $sm) {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+        }
+        @media (min-width: $lg) {
+            width: 70%;
+            max-width: 790px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        li {
+            margin: 30px auto;
+            @media (min-width: $sm) {
+                width: 29%;
+                margin: 2%;
+            }
+            @media (min-width: $lg) {
+                width: 23%;
+                margin: 1%;
+            }
+
+
+            &.restaurant {
+                @media (min-width: $sm) and (max-width: $md){
+                    width: 100%;
+                    margin: 50px 30px;
+                    display: flex;
+                    display: -o-flex;
+                    display: -ms-flex;
+                    display: -moz-flex;
+                    display: -webkit-flex;
+
+                    .imagen {
+                        width: 50%;
+
+                        img {
+                            max-width: 90%;
+                        }
+                    }
+
+                    h4 {
+                        width: 40%;
+                        text-align: left;
+                        margin: 0;
+                        margin-left: 20px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        .imagen {
+            img {
+                margin: 0 auto;
+                max-width: 142px;
+            }
+        }
+
+        h4 {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+}//servicios-section

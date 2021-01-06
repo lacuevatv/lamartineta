@@ -1404,12 +1404,115 @@ button {
   display: -moz-flex;
   display: -webkit-flex;
 }
+@media (min-width: 1200px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios li {
+    margin: 20px 50px 20px 0;
+  }
+}
 .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios li > div {
   width: 10%;
 }
 .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios li span {
   margin-left: 20px;
   width: 80%;
+}
+.inner-wrapper .servicios-section {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .servicios-section {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .servicios-section .header-servicios {
+    width: 30%;
+    max-width: 312px;
+  }
+}
+.inner-wrapper .servicios-section .title-section {
+  margin: 20px 0;
+}
+.inner-wrapper .servicios-section p {
+  font-size: 18px;
+  line-height: 20px;
+  color: #828385;
+  margin-bottom: 40px;
+}
+.inner-wrapper .servicios-section .servicios {
+  font-size: 20px;
+  line-height: 24px;
+  color: #828385;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .servicios-section .servicios {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .servicios-section .servicios {
+    width: 70%;
+    max-width: 790px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.inner-wrapper .servicios-section .servicios li {
+  margin: 30px auto;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .servicios-section .servicios li {
+    width: 29%;
+    margin: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .servicios-section .servicios li {
+    width: 23%;
+    margin: 1%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .inner-wrapper .servicios-section .servicios li.restaurant {
+    width: 100%;
+    margin: 50px 30px;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+  }
+  .inner-wrapper .servicios-section .servicios li.restaurant .imagen {
+    width: 50%;
+  }
+  .inner-wrapper .servicios-section .servicios li.restaurant .imagen img {
+    max-width: 90%;
+  }
+  .inner-wrapper .servicios-section .servicios li.restaurant h4 {
+    width: 40%;
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+.inner-wrapper .servicios-section .servicios .imagen img {
+  margin: 0 auto;
+  max-width: 142px;
+}
+.inner-wrapper .servicios-section .servicios h4 {
+  margin-top: 20px;
+  text-align: center;
 }
 .inner-wrapper .eventos-section .wrapper-eventos {
   border: 2px solid #5B7952;

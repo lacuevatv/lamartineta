@@ -257,6 +257,9 @@
                     display: -ms-flex;
                     display: -moz-flex;
                     display: -webkit-flex;
+                    @media (min-width: $lg) {
+                        margin: 20px 50px 20px 0;
+                    }
 
                     > div {
                         width: 10%;

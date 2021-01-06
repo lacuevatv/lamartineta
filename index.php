@@ -436,15 +436,18 @@
 
             </section>
 
-            <section style="display:none" id="servicios" class="section servicios-section">
-                <h2 class="title-section">
-                    Servicios
-                </h2>
-                <p>
-                    La posada cuenta con los siguientes servicios:
-                </p>
+            <section id="servicios" class="section servicios-section">
 
-                <ul>
+                <div class="header-servicios">
+                    <h2 class="title-section">
+                        Servicios
+                    </h2>
+                    <p>
+                        La posada cuenta con los siguientes servicios:
+                    </p>
+                </div>
+
+                <ul class="servicios">
                     <li>
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
@@ -514,7 +517,7 @@
                             Huerta orgánica.
                         </h4>
                     </li>
-                    <li>
+                    <li class="restaurant">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
