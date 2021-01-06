@@ -609,40 +609,58 @@
                 </ul>
             </section>
 
-            <section style="display:none" id="eventos" class="section eventos-section">
-                <h2 class="title-section">
-                    Eventos especiales
-                </h2>
+            <section id="eventos" class="section eventos-section">
+                <div class="wrapper-eventos">
 
-                <ul class="eventos-list">
-                    <li class="evento">
-                        <h4>
-                            Sociales
-                        </h4>
-                        <ul class="inner-list">
-                            <li>
-                                • Casamientos, Cumpleaños y Agasajos.
-                            </li>
-                        </ul>
-                    </li>
+                    <h2 class="title-section">
+                        Eventos especiales
+                    </h2>
 
-                    <li class="evento">
-                        <h4>
-                            Corporativos
-                        </h4>
-                        <ul class="inner-list">
-                            <li>
-                                • Exhibiciones y Lanzamientos de Productos.
-                            </li>
-                            <li>
-                                • Reuniones de trabajo y Congresos.
-                            </li>
-                            <li>
-                                • Capacitación.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                    <div class="lazy-load-image">
+                        <?php echo setHtmlImage(
+                            array(
+                                'class' => 'firulete',
+                                'alt' => '',
+                                'src' => array(
+                                    IMAGESURL . 'firulete-eventos-especiales.png', IMAGESURL . 'firulete-eventos-especiales@2x.png', 
+                                ),
+                                'svg' => '',
+                                'srcTablet' => '',
+                                'srcMobile' => ''
+                            ), true
+                        ); ?>
+                    </div>
+
+                    <ul class="eventos-list">
+                        <li class="evento">
+                            <h4>
+                                Sociales
+                            </h4>
+                            <ul class="inner-list">
+                                <li>
+                                    • Casamientos, Cumpleaños y Agasajos.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="evento">
+                            <h4>
+                                Corporativos
+                            </h4>
+                            <ul class="inner-list">
+                                <li>
+                                    • Exhibiciones y Lanzamientos de Productos.
+                                </li>
+                                <li>
+                                    • Reuniones de trabajo y Congresos.
+                                </li>
+                                <li>
+                                    • Capacitación.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </section>
             
             <section id="reservar" class="section form-section">

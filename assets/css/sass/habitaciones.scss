@@ -2,7 +2,7 @@
     @include padding-top-bottom(66px, 20px);
 
     .title-section {
-        color: #55372E;
+        color: $colorVioleta;
     }
 
     .wrapper-habitaciones {
@@ -189,7 +189,7 @@
                     }
 
                     strong {
-                        color: #55372E;
+                        color: $colorVioleta;
                     }
 
                     &::before {
@@ -206,7 +206,7 @@
                         -ms-border-radius: 50%;
                         -o-border-radius: 50%;
                         border-radius: 50%;
-                        background-color: #55372E;
+                        background-color: $colorVioleta;
                         @media (min-width: $sm) {
                             left: 45%;
                             top: -40px;
