@@ -145,257 +145,292 @@
                 
             </section>
             
-            <section style="display:none" id="habitacion" class="section habitacion-section">
+            <section id="habitacion" class="section habitacion-section">
+
                 <h2 class="title-section">
                     Alojamiento - Habitaciones
                 </h2>
 
-                <div class="habitaciones-header">
-                    <div class="check">
-                        <p class="in">
-                            Horario de Check in <strong>14:00hs</strong><em>(flexible)</em>
-                        </p>
-                        <p class="out">
-                            Horario de Check out <strong>11:00hs</strong>
-                        </p>
+                <div class="wrapper-habitaciones">
+
+                    <div class="imagen-habitaciones">
+                        <div class="lazy-load-image">
+                            <?php echo setHtmlImage(
+                                array(
+                                    'class' => 'hab1',
+                                    'alt' => 'Imagen habitacion',
+                                    'src' => array(
+                                        IMAGESURL . 'habitacion1.png', IMAGESURL . 'habitacion1@2x.png', 
+                                    ),
+                                    'svg' => '',
+                                    'srcTablet' => '',
+                                    'srcMobile' => ''
+                                ), true
+                            ); ?>
+                        </div>
+                        <div class="lazy-load-image">
+                            <?php echo setHtmlImage(
+                                array(
+                                    'class' => 'hab2',
+                                    'alt' => 'Imagen habitacion',
+                                    'src' => array(
+                                        IMAGESURL . 'habitacion2.png', IMAGESURL . 'habitacion2@2x.png', 
+                                    ),
+                                    'svg' => '',
+                                    'srcTablet' => '',
+                                    'srcMobile' => ''
+                                ), true
+                            ); ?>
+                        </div>
                     </div>
-                </div>
+                    
+                    <div class="habitaciones-header">
+                        <div class="check">
+                            <p class="in">
+                                Horario de Check in <strong>14:00hs</strong><em>(flexible)</em>
+                            </p>
+                            <p class="out">
+                                Horario de Check out <strong>11:00hs</strong>
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="habitaciones-data">
-                    <p>
-                        Las habitaciones son de aprox. 30 mts2 especialmente decoradas y ambientadas.
-                    </p>
-                    <p>
-                        Todas poseen:
-                    </p>
+                    <div class="habitaciones-data">
+                        <p>
+                            Las habitaciones son de aprox. 30 mts<sup>2</sup> especialmente decoradas y ambientadas.
+                        </p>
+                        <p>
+                            Todas poseen:
+                        </p>
 
-                    <ul class="habitaciones-servicios">
-                        <span>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Ventanales',
-                                            'src' => array(
-                                                IMAGESURL . 'ventanales.png', IMAGESURL . 'ventanales@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Amplios ventanales con vista al parque.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon camas',
-                                            'src' => array(
-                                                IMAGESURL . 'camas.png', IMAGESURL . 'camas@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Cama tamaño King o dos camas twin.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon algodon',
-                                            'src' => array(
-                                                IMAGESURL . 'algodon.png', IMAGESURL . 'algodon@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Sábanas de algodón.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon TV',
-                                            'src' => array(
-                                                IMAGESURL . 'tv.png', IMAGESURL . 'tv@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Plasma LCD 32” con programación satelital.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Aire',
-                                            'src' => array(
-                                                IMAGESURL . 'aire.png', IMAGESURL . 'aire@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Aire acondicionado.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Calefaccion',
-                                            'src' => array(
-                                                IMAGESURL . 'calefaccion.png', IMAGESURL . 'calefaccion@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Calefacción central por radiadores programables.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'icon Cafe',
-                                            'src' => array(
-                                                IMAGESURL . 'cafe.png', IMAGESURL . 'cafe@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Jarra térmica con café y té de cortesía.</span>
-                            </li>
-                        </span>
-                        <span>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Wifi',
-                                            'src' => array(
-                                                IMAGESURL . 'wifi.png', IMAGESURL . 'wifi@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Wifi sin cargo.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Telefono',
-                                            'src' => array(
-                                                IMAGESURL . 'telefono.png', IMAGESURL . 'telefono@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Teléfono.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Baños',
-                                            'src' => array(
-                                                IMAGESURL . 'banera.png', IMAGESURL . 'banera@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Baños completos con bañera.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Amenities',
-                                            'src' => array(
-                                                IMAGESURL . 'amenities.png', IMAGESURL . 'amenities@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Set de amenities exclusivos.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon Secador',
-                                            'src' => array(
-                                                IMAGESURL . 'secador.png', IMAGESURL . 'secador@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Secador de cabello.</span>
-                            </li>
-                            <li>
-                                <div class="icon lazy-load-image">
-                                    <?php echo setHtmlImage(
-                                        array(
-                                            'class' => '',
-                                            'alt' => 'Icon toallero',
-                                            'src' => array(
-                                                IMAGESURL . 'toallero.png', IMAGESURL . 'toallero@2x.png', 
-                                            ),
-                                            'svg' => '',
-                                            'srcTablet' => '',
-                                            'srcMobile' => ''
-                                        ), true
-                                    ); ?>
-                                </div>
-                                <span>Toallero térmico.</span>
-                            </li>
-                        </span>
-                    </ul>
+                        <ul class="habitaciones-servicios">
+                            <span>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Ventanales',
+                                                'src' => array(
+                                                    IMAGESURL . 'ventanales.png', IMAGESURL . 'ventanales@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Amplios ventanales con vista al parque.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon camas',
+                                                'src' => array(
+                                                    IMAGESURL . 'camas.png', IMAGESURL . 'camas@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Cama tamaño King o dos camas twin.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon algodon',
+                                                'src' => array(
+                                                    IMAGESURL . 'algodon.png', IMAGESURL . 'algodon@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Sábanas de algodón.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon TV',
+                                                'src' => array(
+                                                    IMAGESURL . 'tv.png', IMAGESURL . 'tv@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Plasma LCD 32” con programación satelital.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Aire',
+                                                'src' => array(
+                                                    IMAGESURL . 'aire.png', IMAGESURL . 'aire@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Aire acondicionado.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Calefaccion',
+                                                'src' => array(
+                                                    IMAGESURL . 'calefaccion.png', IMAGESURL . 'calefaccion@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Calefacción central por radiadores programables.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'icon Cafe',
+                                                'src' => array(
+                                                    IMAGESURL . 'cafe.png', IMAGESURL . 'cafe@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Jarra térmica con café y té de cortesía.</span>
+                                </li>
+                            </span>
+                            <span>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Wifi',
+                                                'src' => array(
+                                                    IMAGESURL . 'wifi.png', IMAGESURL . 'wifi@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Wifi sin cargo.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Telefono',
+                                                'src' => array(
+                                                    IMAGESURL . 'telefono.png', IMAGESURL . 'telefono@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Teléfono.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Baños',
+                                                'src' => array(
+                                                    IMAGESURL . 'banera.png', IMAGESURL . 'banera@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Baños completos con bañera.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Amenities',
+                                                'src' => array(
+                                                    IMAGESURL . 'amenities.png', IMAGESURL . 'amenities@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Set de amenities exclusivos.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon Secador',
+                                                'src' => array(
+                                                    IMAGESURL . 'secador.png', IMAGESURL . 'secador@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Secador de cabello.</span>
+                                </li>
+                                <li>
+                                    <div class="icon lazy-load-image">
+                                        <?php echo setHtmlImage(
+                                            array(
+                                                'class' => '',
+                                                'alt' => 'Icon toallero',
+                                                'src' => array(
+                                                    IMAGESURL . 'toallero.png', IMAGESURL . 'toallero@2x.png', 
+                                                ),
+                                                'svg' => '',
+                                                'srcTablet' => '',
+                                                'srcMobile' => ''
+                                            ), true
+                                        ); ?>
+                                    </div>
+                                    <span>Toallero térmico.</span>
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
                 </div>
 
 

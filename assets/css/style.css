@@ -1115,5 +1115,301 @@ button {
 .inner-wrapper .historia-section .historia-wrapper .historia strong {
   font-weight: 700;
 }
+.inner-wrapper .habitacion-section {
+  padding-top: 66px;
+  padding-bottom: 20px;
+}
+.inner-wrapper .habitacion-section .title-section {
+  color: #55372E;
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones {
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones {
+    max-width: 608px;
+    margin: 30px auto 0;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones {
+    max-width: 100%;
+    margin: 30px 0 0;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones {
+    width: 70%;
+    overflow: hidden;
+    max-width: 721px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones .hab1 {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones .hab1 {
+    width: 375px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones .hab1 {
+    width: 425px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones .hab2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones .hab2 {
+    display: block;
+    width: 221px;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .imagen-habitaciones .hab2 {
+    width: 250px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header {
+  margin: 30px 0;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header {
+    width: 30%;
+    margin: 0;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 700;
+  color: #828385;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check {
+    font-size: 16px;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check {
+    display: block;
+    text-align: left;
+    padding-top: 0;
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 25px;
+  top: 50px;
+  width: 1px;
+  height: 60%;
+  background-color: #5B7952;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check::before {
+    left: 24%;
+    top: 30px;
+    width: 50%;
+    height: 1px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check::before {
+    left: 25px;
+    top: 50px;
+    width: 1px;
+    height: 60%;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check strong {
+  color: #5B7952;
+  display: block;
+  font-size: 32px;
+  line-height: 39px;
+  margin: 5px 0;
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .in {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 60px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .in {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .in {
+    padding-left: 60px;
+    margin-bottom: 20px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .in::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 15px;
+  top: 30px;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #5B7952;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .in::before {
+    left: 45%;
+    top: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .in::before {
+    left: 15px;
+    top: 30px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .out {
+  position: relative;
+  padding-left: 60px;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .out {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .out {
+    padding-left: 60px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .out strong {
+  color: #55372E;
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .out::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 15px;
+  top: 25px;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #55372E;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .out::before {
+    left: 45%;
+    top: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-header .check .out::before {
+    left: 15px;
+    top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #828385;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data p {
+    max-width: 558px;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios {
+  font-size: 20px;
+  line-height: 22px;
+  color: #828385;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+  }
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios li {
+  margin: 20px 0;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios li > div {
+  width: 10%;
+}
+.inner-wrapper .habitacion-section .wrapper-habitaciones .habitaciones-data .habitaciones-servicios li span {
+  margin-left: 20px;
+  width: 80%;
+}
 
 /*# sourceMappingURL=style.css.map */
