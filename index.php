@@ -15,6 +15,7 @@
     <script>
         window.baseURL = '<?php echo BASE_URL; ?>';
         window.recpatchaKey = '<?php echo RECAPTCHA_V3_KEY; ?>';
+        window.mapaPosada = '<?php echo MAPA_POSADA; ?>';
     </script>
     <script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_V3_KEY; ?>"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -674,7 +675,7 @@
                 <?php include 'templates/formulario.php'; ?>
             </section>
 
-            <section style="display:none" id="map" class="full-section mapa-section"></section>
+            <section id="map" class="mapa-section"></section>
         </main>
 
         <?php include 'templates/footer.php'; ?>

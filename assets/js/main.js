@@ -321,6 +321,20 @@ function togleMenu() {
     }
 }
 
+function insertMap(mapa) {
+    var contenedor = document.querySelector('#map');
+    var map = document.createElement('iframe');
+    map.src = mapa;
+    map.width = "100%";
+    map.height = "450";
+    map.frameborder = "0";
+    map.style = "border:0";
+
+    contenedor.appendChild(map);
+    // <iframe src="" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+}
+
 function init() {
 
     //togle
@@ -349,6 +363,10 @@ function init() {
             
             
         }
+    }
+
+    if (window.mapaPosada) {
+        insertMap(window.mapaPosada);
     }
     
 
