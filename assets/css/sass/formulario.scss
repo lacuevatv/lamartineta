@@ -148,6 +148,10 @@
                 height: 117px;;
             }
         }
+
+        &.error {
+            border: 1px solid red;
+        }
     }//.input-wrapper
 
     .submit-wrapper {

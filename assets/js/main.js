@@ -146,6 +146,35 @@ function formulario(idform) {
     
     formulario.addEventListener('submit', function(event){
         event.preventDefault();
+        
+        //valida email
+        if ( formulario.querySelector('#email').value.trim() === '' ) {
+            var input = formulario.querySelector('#email');
+            input.placeholder = 'El email es requerido';
+            input.parentElement.classList.add('error');
+            smoothScroll('#email');
+            return;
+        }
+
+        //valida fechas
+        var hoy = new Date();
+        if ( formulario.querySelector('#datein').value === '' || new Date(formulario.querySelector('#datein').value) < hoy) {
+            formulario.querySelector('#datein').parentElement.classList.add('error');
+            smoothScroll('#datein');
+            return;
+        }
+        if ( formulario.querySelector('#dateout').value === '' || new Date(formulario.querySelector('#dateout').value) < hoy || new Date(formulario.querySelector('#dateout').value) < new Date(formulario.querySelector('#datein').value) ){
+            formulario.querySelector('#dateout').parentElement.classList.add('error');
+            smoothScroll('#dateout');
+            return;
+        }
+
+        //valida pasajeros
+        if ( formulario.querySelector('#pasajeros').value.trim() === '' || formulario.querySelector('#pasajeros').value <= 0) {
+            formulario.querySelector('#pasajeros').parentElement.classList.add('error');
+            smoothScroll('#pasajeros');
+            return;
+        }
 
         grecaptcha.ready(function() {
             grecaptcha.execute(window.recpatchaKey, {action: 'bookingform'}).then(function(token) {
@@ -256,7 +285,7 @@ function getOffset( el ) {
     //toma la posicion del elemento, el cual debe pasarse para que sea uno solo por queryselector: '.clase', '#id', 'tag'
     function elmYPosition(eID) {
         var elm = document.querySelector(eID);
-        var y = elm.offsetTop;
+        var y = elm.offsetTop-100;
         var node = elm;
         while (node.offsetParent && node.offsetParent != document.body) {
             node = node.offsetParent;

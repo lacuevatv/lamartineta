@@ -38,8 +38,8 @@ if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrRe
     //data formulario
     $email = isset( $_POST['email'] ) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
     $name = isset( $_POST['name'] ) ? filter_var($_POST['name'], FILTER_SANITIZE_STRING) : '';
-    $tel = isset( $_POST['tel'] ) ? filter_var($_POST['tel'], FILTER_SANITIZE_STRING) : '';
-    $paisSelected = isset( $_POST['pais'] ) ? $_POST['pais'] : '';
+    $tel = isset( $_POST['tel'] ) ? filter_var($_POST['tel'], FILTER_SANITIZE_NUMBER_INT) : '';
+    $paisSelected = isset( $_POST['pais'] ) ? filter_var($_POST['pais'], FILTER_SANITIZE_STRING) : '';
     $datein = isset( $_POST['datein'] ) ? filter_var($_POST['datein'], FILTER_SANITIZE_STRING) : '';
     $dateout = isset( $_POST['dateout'] ) ? filter_var($_POST['dateout'], FILTER_SANITIZE_STRING) : '';
     $pasajeros = isset( $_POST['pasajeros'] ) ? filter_var($_POST['pasajeros'], FILTER_SANITIZE_NUMBER_INT) : '';

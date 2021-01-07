@@ -952,6 +952,9 @@ button {
     height: 117px;
   }
 }
+.inner-wrapper .formulario-reservas .input-wrapper.error {
+  border: 1px solid red;
+}
 @media (min-width: 992px) {
   .inner-wrapper .formulario-reservas .submit-wrapper {
     width: 100%;
