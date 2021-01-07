@@ -403,6 +403,27 @@ function init() {
     loadLazyImages();
 
     //animaciones
+    var animaciones = document.querySelectorAll('.animate');
+
+    if ( animaciones.length > 0 ) {
+        for (var i = 0; i < animaciones.length; i++) {
+                
+            if ( isVisible(animaciones[i]) ) {
+                animaciones[i].classList.add('in-view');
+            }
+            
+        }
+        
+        window.addEventListener('scroll', function(){
+            for (var i = 0; i < animaciones.length; i++) {
+                
+                if ( isVisible(animaciones[i]) ) {
+                    animaciones[i].classList.add('in-view');
+                }
+                
+            }
+        });
+    }
 
 }
 

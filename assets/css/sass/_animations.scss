@@ -1,5 +1,9 @@
+.animate {
+	opacity: 0;
+}
+ 
  //slide down flecha header
- .movil-element.slide-down.in-view {
+ .animate.slide-down.in-view {
 	animation-name: slide-down;
 	animation-duration: 1s;
 	animation-delay: 0.5s;
@@ -9,4 +13,64 @@
 @keyframes slide-down {
 	from {opacity: 0;transform:translateY(0);}
 	to {opacity: 1;transform:translateY(30px);}
+}
+
+.animate.fade-down.in-view {
+	animation-name: fade-down;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-down {
+	from {opacity: 0;transform:translateY(0);}
+	to {opacity: 1;transform:translateY(30px);}
+}
+
+.animate.fade-up.in-view {
+	animation-name: fade-up;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-up {
+	from {opacity: 0;transform:translateY(30px);}
+	to {opacity: 1;transform:translateY(0);}
+}
+
+.animate.fade-left.in-view {
+	animation-name: fade-left;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-left {
+	from {opacity: 0;transform:translateX(-30px);}
+	to {opacity: 1;transform:translateX(0);}
+}
+
+.animate.fade-right.in-view {
+	animation-name: fade-right;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-right {
+	from {opacity: 0;transform:translateX(30px);}
+	to {opacity: 1;transform:translateX(0);}
+}
+
+.animate.fade-in.in-view {
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }

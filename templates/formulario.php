@@ -1,7 +1,7 @@
 <form id="booking_form" class="formulario-reservas" method="post">
 
     <div class="wrapper-formulario">
-        <div class="columna">
+        <div class="columna animate fade-up">
             <legend>
                 Información General
             </legend>
@@ -45,7 +45,7 @@
         
         </div>
         
-        <div class="columna">
+        <div class="columna animate fade-up" style="animation-delay:750ms">
             <legend>
                 Información de Alojamiento
             </legend>

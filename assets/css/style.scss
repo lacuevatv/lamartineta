@@ -39,6 +39,7 @@
 .inner-wrapper {
     @import 'sass/mixins';
     @import 'sass/helpers';
+    @import 'sass/animations';
     @import 'sass/header';
     @import 'sass/footer';
     @import 'sass/formulario';
@@ -46,5 +47,4 @@
     @import 'sass/habitaciones';
     @import 'sass/servicios';
     @import 'sass/eventos';
-
 }

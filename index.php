@@ -71,7 +71,7 @@
                     <a class="telefono" href="tel:<?php echo TELEPHONE_NUMBER; ?>" target="_blank" title="Llamar">
                         <?php echo TELEPHONE_NUMBER_SHOW; ?>
                     </a>
-                    <a class="btn-reservar smoth-scroll" href="#reservar" title="Reservar">
+                    <a class="btn-reservar smoth-scroll animate fade-up" href="#reservar" title="Reservar">
                         Reservar
                     </a>
                 </div>
@@ -83,7 +83,7 @@
             <section id="historia" class="historia-section">
                 <div class="historia-wrapper">
                     <div class="image-historia">
-                        <div class="lazy-load-image">
+                        <div class="lazy-load-image animate fade-in">
                             <?php echo setHtmlImage(
                                 array(
                                     'class' => 'historica',
@@ -97,7 +97,7 @@
                                 ), true
                             ); ?>
                         </div>
-                        <div class="lazy-load-image">
+                        <div class="lazy-load-image animate fade-right">
                             <?php echo setHtmlImage(
                                 array(
                                     'class' => 'stone',
@@ -113,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="historia">
+                    <div class="historia animate fade-in">
                         <h2 class="title-section">
                             Historia
                         </h2>
@@ -148,14 +148,14 @@
             
             <section id="habitacion" class="section habitacion-section">
 
-                <h2 class="title-section">
+                <h2 class="title-section animate fade-left">
                     Alojamiento - Habitaciones
                 </h2>
 
                 <div class="wrapper-habitaciones">
 
                     <div class="imagen-habitaciones">
-                        <div class="lazy-load-image">
+                        <div class="lazy-load-image animate fade-in">
                             <?php echo setHtmlImage(
                                 array(
                                     'class' => 'hab1',
@@ -169,7 +169,7 @@
                                 ), true
                             ); ?>
                         </div>
-                        <div class="lazy-load-image">
+                        <div class="lazy-load-image animate fade-in">
                             <?php echo setHtmlImage(
                                 array(
                                     'class' => 'hab2',
@@ -196,7 +196,7 @@
                         </div>
                     </div>
 
-                    <div class="habitaciones-data">
+                    <div class="habitaciones-data animate fade-in">
                         <p>
                             Las habitaciones son de aprox. 30 mts<sup>2</sup> especialmente decoradas y ambientadas.
                         </p>
@@ -206,7 +206,7 @@
 
                         <ul class="habitaciones-servicios">
                             <span>
-                                <li>
+                                <li class="animate fade-up">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -223,7 +223,7 @@
                                     </div>
                                     <span>Amplios ventanales con vista al parque.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 0.6s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -240,7 +240,7 @@
                                     </div>
                                     <span>Cama tamaño King o dos camas twin.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 0.7s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -257,7 +257,7 @@
                                     </div>
                                     <span>Sábanas de algodón.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 0.8s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -274,7 +274,7 @@
                                     </div>
                                     <span>Plasma LCD 32” con programación satelital.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 0.9s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -291,7 +291,7 @@
                                     </div>
                                     <span>Aire acondicionado.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -308,7 +308,7 @@
                                     </div>
                                     <span>Calefacción central por radiadores programables.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1.1s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -327,7 +327,7 @@
                                 </li>
                             </span>
                             <span>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1.2s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -344,7 +344,7 @@
                                     </div>
                                     <span>Wifi sin cargo.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1.3s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -361,7 +361,7 @@
                                     </div>
                                     <span>Teléfono.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1.4s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -378,7 +378,7 @@
                                     </div>
                                     <span>Baños completos con bañera.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1.5s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -395,7 +395,7 @@
                                     </div>
                                     <span>Set de amenities exclusivos.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1.6s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -412,7 +412,7 @@
                                     </div>
                                     <span>Secador de cabello.</span>
                                 </li>
-                                <li>
+                                <li class="animate fade-up" style="animation-delay: 1.7s;">
                                     <div class="icon lazy-load-image">
                                         <?php echo setHtmlImage(
                                             array(
@@ -440,16 +440,16 @@
             <section id="servicios" class="section servicios-section">
 
                 <div class="header-servicios">
-                    <h2 class="title-section">
+                    <h2 class="title-section animate fade-left">
                         Servicios
                     </h2>
-                    <p>
+                    <p class="animate fade-left" style="animation-delay: 0.7s;">
                         La posada cuenta con los siguientes servicios:
                     </p>
                 </div>
 
                 <ul class="servicios">
-                    <li>
+                    <li class="animate fade-up">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
@@ -472,7 +472,7 @@
                             Wifi libre e ilimitado en todos los sectores.
                         </h4>
                     </li>
-                    <li>
+                    <li class="animate fade-up" style="animation-delay: 0.6s;">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
@@ -495,7 +495,7 @@
                             Servicio de masajes con reserva previa.
                         </h4>
                     </li>
-                    <li>
+                    <li class="animate fade-up" style="animation-delay: 0.7s;">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
@@ -518,7 +518,7 @@
                             Huerta orgánica.
                         </h4>
                     </li>
-                    <li class="restaurant">
+                    <li class="restaurant animate fade-up" style="animation-delay: 0.8s;">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
@@ -541,7 +541,7 @@
                             Restaurant: Almuerzo y cena. Nuestros platos son caseros, con productos de nuestra huerta.
                         </h4>
                     </li>
-                    <li>
+                    <li class="animate fade-up" style="animation-delay: 0.9s;">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
@@ -564,7 +564,7 @@
                             Seguridad nocturna.
                         </h4>
                     </li>
-                    <li>
+                    <li class="animate fade-up" style="animation-delay: 1s;">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
@@ -587,7 +587,7 @@
                             Gimnasio y ejercicios con la vista al parque.
                         </h4>
                     </li>
-                    <li>
+                    <li class="animate fade-up" style="animation-delay: 1.1s;">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
@@ -613,14 +613,14 @@
                 </ul>
             </section>
 
-            <section id="eventos" class="section eventos-section">
+            <section id="eventos" class="section eventos-section animate fade-in">
                 <div class="wrapper-eventos">
 
                     <h2 class="title-section">
                         Eventos especiales
                     </h2>
 
-                    <div class="lazy-load-image">
+                    <div class="lazy-load-image animate fade-in" style="animation-delay:1000ms">
                         <?php echo setHtmlImage(
                             array(
                                 'class' => 'firulete',
@@ -668,7 +668,7 @@
             </section>
             
             <section id="reservar" class="section form-section">
-                <h2 class="title-section">
+                <h2 class="title-section animate fade-left">
                     Reservas
                 </h2>
 
