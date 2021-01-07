@@ -20,7 +20,7 @@
     <script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_V3_KEY; ?>"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <link href="<?php echo BASE_URL; ?>assets/css/style.css?ver=1.0" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>assets/css/style.css?ver=1.1" rel="stylesheet">
     
 </head>
 <body>
@@ -682,7 +682,7 @@
 
     </div>
 </div>
-<script src="<?php echo BASE_URL; ?>assets/js/main.js?ver=1.0"></script>
+<script src="<?php echo BASE_URL; ?>assets/js/main.js?ver=1.1"></script>
     
 </body>
 </html>
