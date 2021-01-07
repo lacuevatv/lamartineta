@@ -7,9 +7,9 @@ define("BASE_URL", "http://127.0.0.1:8000/");
 define("IMAGESURL", BASE_URL . 'assets/images/');
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-define("SMTP_HOST", "c2070540.ferozo.com");  // Dominio alternativo brindado en el email de alta 
-define("SMTP_USUARIO", "info@lamartinetaposada.com");  // Mi cuenta de correo
-define("SMTP_CLAVE", "lnMtr2@7oE");
+define("SMTP_HOST", "");  // Dominio alternativo brindado en el email de alta 
+define("SMTP_USUARIO", "");  // Mi cuenta de correo
+define("SMTP_CLAVE", "");
 define("EMAIL_DESTINO_RESERVA", "reservas@lamartinetaposada.com");
 define("ASUNTO_FORMULARIO_RESERVA", "Nueva reserva desde la pagina");
 define("MENSAJE_EXITO", "El correo fue enviado correctamente.");
