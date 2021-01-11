@@ -472,27 +472,27 @@
                             Wifi libre e ilimitado en todos los sectores.
                         </h4>
                     </li>
-                    <li class="animate fade-up" style="animation-delay: 0.6s;">
+                    <li class="animate fade-up" style="animation-delay: 1s;">
                         <div class="imagen lazy-load-image">
                             <?php echo setHtmlImage(
                                 array(
                                     'class' => '',
-                                    'alt' => 'foto masajes',
+                                    'alt' => 'foto parque',
                                     'src' => array(
-                                        IMAGESURL . 'masajes.png', IMAGESURL . 'masajes@2x.png', 
+                                        IMAGESURL . 'actividades1.png', IMAGESURL . 'actividades1@2x.png', 
                                     ),
                                     'svg' => '',
                                     'srcTablet' => array(
-                                        IMAGESURL . 'masajes-tablet.png', IMAGESURL . 'masajes-tablet@2x.png', 
+                                        IMAGESURL . 'actividades1-tablet.png', IMAGESURL . 'actividades1-tablet@2x.png', 
                                     ),
                                     'srcMobile' => array(
-                                        IMAGESURL . 'masajes-mov.png', IMAGESURL . 'masajes-mov@2x.png',                                         
+                                        IMAGESURL . 'actividades1-mov.png', IMAGESURL . 'actividades1-mov@2x.png', 
                                     )
                                 ), true
                             ); ?>
                         </div>
                         <h4>
-                            Servicio de masajes con reserva previa.
+                            Gimnasio y ejercicios con la vista al parque.
                         </h4>
                     </li>
                     <li class="animate fade-up" style="animation-delay: 0.7s;">
@@ -562,29 +562,6 @@
                         </div>
                         <h4>
                             Seguridad nocturna.
-                        </h4>
-                    </li>
-                    <li class="animate fade-up" style="animation-delay: 1s;">
-                        <div class="imagen lazy-load-image">
-                            <?php echo setHtmlImage(
-                                array(
-                                    'class' => '',
-                                    'alt' => 'foto parque',
-                                    'src' => array(
-                                        IMAGESURL . 'actividades1.png', IMAGESURL . 'actividades1@2x.png', 
-                                    ),
-                                    'svg' => '',
-                                    'srcTablet' => array(
-                                        IMAGESURL . 'actividades1-tablet.png', IMAGESURL . 'actividades1-tablet@2x.png', 
-                                    ),
-                                    'srcMobile' => array(
-                                        IMAGESURL . 'actividades1-mov.png', IMAGESURL . 'actividades1-mov@2x.png', 
-                                    )
-                                ), true
-                            ); ?>
-                        </div>
-                        <h4>
-                            Gimnasio y ejercicios con la vista al parque.
                         </h4>
                     </li>
                     <li class="animate fade-up" style="animation-delay: 1.1s;">
