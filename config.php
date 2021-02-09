@@ -15,8 +15,8 @@ define("ASUNTO_FORMULARIO_RESERVA", "Nueva reserva desde la pagina");
 define("MENSAJE_EXITO", "El correo fue enviado correctamente.");
 define("MENSAJE_ERROR", "Ocurrió un error inesperado.");
 
-define("WHATSAPP_NUMBER", "5491144006189");
-define("WHATSAPP_NUMBER_SHOW", "+54 9 11 4400 6189");
+define("WHATSAPP_NUMBER", "5491138438104");
+define("WHATSAPP_NUMBER_SHOW", "+54 9 11 3843 8104");
 define("TELEPHONE_NUMBER_SHOW", "+54 2323 492063");
 define("TELEPHONE_NUMBER", "+542323492063");
 define("FACEBOOK_POSADA", "https://www.facebook.com/LaMartinetaPosada/");
